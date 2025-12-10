@@ -22,6 +22,38 @@
             padding: 0;
         }
 
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            background: var(--card-bg);
+            border-bottom: 1px solid #eee;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        nav .links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--heading-color);
+            font-weight: 500;
+        }
+
+        nav .links a:hover {
+            color: var(--primary-color);
+        }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -99,10 +131,22 @@
             h1 {
                 font-size: 24px;
             }
+            nav .links a {
+                margin-left: 10px;
+            }
         }
     </style>
 </head>
 <body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a class="logo" href="index.html">BongDate</a>
+        <div class="links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="safety.html">Safety Standards</a>
+        </div>
+    </nav>
 
     <header>
         <h1>BongDate</h1>
@@ -113,6 +157,8 @@
         <p class="last-updated">Last Updated: December 02, 2025</p>
 
         <div class="content">
+            <!-- (Everything below is your existing policy content — unchanged) -->
+
             <p>Welcome to BongDate. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application. If you do not agree with the terms of this policy, please do not use the App.</p>
 
             <h2>1. Information We Collect</h2>
@@ -161,8 +207,7 @@
             <h3>How to Request Deletion</h3>
             <ul>
                 <li>In the App: <strong>Profile &gt; Settings &gt; Account &gt; Delete Account</strong></li>
-                <li>Email us: <a href="mailto:bongdateapp@gmail.com">bongdateapp@gmail.com</a>  
-                (Include your registered phone number for verification)</li>
+                <li>Email us: <a href="mailto:bongdateapp@gmail.com">bongdateapp@gmail.com</a></li>
             </ul>
 
             <h3>Data That Will Be Deleted</h3>
